@@ -20,8 +20,8 @@ st.title("Prediksi Status Berat Badan (SVM)")
 st.write("Masukkan data berikut untuk memprediksi status berat badan:")
 
 gender = st.selectbox("Jenis Kelamin", ["Male", "Female"])
-height = st.number_input("Tinggi Badan (cm)", min_value=100.0, max_value=250.0)
-weight = st.number_input("Berat Badan (kg)", min_value=30.0, max_value=200.0)
+height = st.number_input("Tinggi Badan (cm)")
+weight = st.number_input("Berat Badan (kg)")
 
 if st.button("Prediksi"):
     # Encoding gender
